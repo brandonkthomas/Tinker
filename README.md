@@ -6,11 +6,11 @@
   <h3 align="center">Tinker</h3>
 
   <p align="center">
-    macOS app for hidden and hard-to-reach system settings
+    macOS app for hidden system settings
     <br />
     <br />
     <a href="https://swift.org"><img alt="Swift" src="https://img.shields.io/badge/Swift-F05138?logo=swift&logoColor=white"></a>
-    <a href="https://developer.apple.com/swiftui/"><img alt="SwiftUI" src="https://img.shields.io/badge/SwiftUI-0A84FF?logo=swift&logoColor=white"></a>
+    <a href="https://developer.apple.com/swiftui/"><img alt="SwiftUI" src="https://img.shields.io/badge/SwiftUI-F05138?logo=swift&logoColor=white"></a>
     <a href="https://www.apple.com/macos/"><img alt="macOS" src="https://img.shields.io/badge/macOS-000000?logo=apple&logoColor=white"></a>
   </p>
 </div>
