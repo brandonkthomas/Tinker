@@ -1,0 +1,745 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 110;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AAF1E0000000000000000006 /* TinkerHelper in Embed Helper */ = {isa = PBXBuildFile; fileRef = AAF1E0000000000000000001 /* TinkerHelper */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		AAF1E0000000000000000007 /* net.brandonthomas.Tinker.helper.plist in Copy Launch Daemon */ = {isa = PBXBuildFile; fileRef = AAF1E0000000000000000004 /* net.brandonthomas.Tinker.helper.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		85136D6E307EEF0A004F2EDB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85136D56307EEF09004F2EDB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85136D5D307EEF09004F2EDB;
+			remoteInfo = Tinker;
+		};
+		85136D78307EEF0A004F2EDB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85136D56307EEF09004F2EDB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85136D5D307EEF09004F2EDB;
+			remoteInfo = Tinker;
+		};
+		AAF1E0000000000000000010 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85136D56307EEF09004F2EDB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AAF1E000000000000000000A;
+			remoteInfo = TinkerHelper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AAF1E0000000000000000008 /* Embed Helper */ = {
+			isa = PBXCopyFilesBuildPhase;
+			dstPath = "";
+			dstSubfolder = Executables;
+			files = (
+				AAF1E0000000000000000006 /* TinkerHelper in Embed Helper */,
+			);
+			name = "Embed Helper";
+		};
+		AAF1E0000000000000000009 /* Copy Launch Daemon */ = {
+			isa = PBXCopyFilesBuildPhase;
+			dstPath = Contents/Library/LaunchDaemons;
+			dstSubfolder = Wrapper;
+			files = (
+				AAF1E0000000000000000007 /* net.brandonthomas.Tinker.helper.plist in Copy Launch Daemon */,
+			);
+			name = "Copy Launch Daemon";
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		85136D5E307EEF09004F2EDB /* Tinker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tinker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		85136D6D307EEF0A004F2EDB /* TinkerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TinkerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		85136D77307EEF0A004F2EDB /* TinkerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TinkerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAF1E0000000000000000001 /* TinkerHelper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TinkerHelper; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAF1E0000000000000000004 /* net.brandonthomas.Tinker.helper.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = net.brandonthomas.Tinker.helper.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		85136D60307EEF09004F2EDB /* Tinker */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Tinker;
+			sourceTree = "<group>";
+		};
+		85136D70307EEF0A004F2EDB /* TinkerTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = TinkerTests;
+			sourceTree = "<group>";
+		};
+		85136D7A307EEF0A004F2EDB /* TinkerUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = TinkerUITests;
+			sourceTree = "<group>";
+		};
+		AAF1E0000000000000000002 /* TinkerHelper */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = TinkerHelper;
+			sourceTree = "<group>";
+		};
+		AAF1E0000000000000000003 /* TinkerShared */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = TinkerShared;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		85136D5B307EEF09004F2EDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		85136D6A307EEF0A004F2EDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		85136D74307EEF0A004F2EDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		AAF1E000000000000000000C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		85136D55307EEF09004F2EDB = {
+			isa = PBXGroup;
+			children = (
+				85136D60307EEF09004F2EDB /* Tinker */,
+				AAF1E0000000000000000003 /* TinkerShared */,
+				AAF1E0000000000000000002 /* TinkerHelper */,
+				AAF1E0000000000000000005 /* LaunchDaemons */,
+				85136D70307EEF0A004F2EDB /* TinkerTests */,
+				85136D7A307EEF0A004F2EDB /* TinkerUITests */,
+				85136D5F307EEF09004F2EDB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		85136D5F307EEF09004F2EDB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				85136D5E307EEF09004F2EDB /* Tinker.app */,
+				85136D6D307EEF0A004F2EDB /* TinkerTests.xctest */,
+				85136D77307EEF0A004F2EDB /* TinkerUITests.xctest */,
+				AAF1E0000000000000000001 /* TinkerHelper */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AAF1E0000000000000000005 /* LaunchDaemons */ = {
+			isa = PBXGroup;
+			children = (
+				AAF1E0000000000000000004 /* net.brandonthomas.Tinker.helper.plist */,
+			);
+			path = LaunchDaemons;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		85136D5D307EEF09004F2EDB /* Tinker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85136D7F307EEF0A004F2EDB /* Build configuration list for PBXNativeTarget "Tinker" */;
+			buildPhases = (
+				85136D5A307EEF09004F2EDB /* Sources */,
+				85136D5B307EEF09004F2EDB /* Frameworks */,
+				85136D5C307EEF09004F2EDB /* Resources */,
+				AAF1E0000000000000000008 /* Embed Helper */,
+				AAF1E0000000000000000009 /* Copy Launch Daemon */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AAF1E0000000000000000011 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				85136D60307EEF09004F2EDB /* Tinker */,
+				AAF1E0000000000000000003 /* TinkerShared */,
+			);
+			name = Tinker;
+			productName = Tinker;
+			productReference = 85136D5E307EEF09004F2EDB /* Tinker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		85136D6C307EEF0A004F2EDB /* TinkerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85136D82307EEF0A004F2EDB /* Build configuration list for PBXNativeTarget "TinkerTests" */;
+			buildPhases = (
+				85136D69307EEF0A004F2EDB /* Sources */,
+				85136D6A307EEF0A004F2EDB /* Frameworks */,
+				85136D6B307EEF0A004F2EDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				85136D6F307EEF0A004F2EDB /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				85136D70307EEF0A004F2EDB /* TinkerTests */,
+			);
+			name = TinkerTests;
+			productName = TinkerTests;
+			productReference = 85136D6D307EEF0A004F2EDB /* TinkerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		85136D76307EEF0A004F2EDB /* TinkerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85136D85307EEF0A004F2EDB /* Build configuration list for PBXNativeTarget "TinkerUITests" */;
+			buildPhases = (
+				85136D73307EEF0A004F2EDB /* Sources */,
+				85136D74307EEF0A004F2EDB /* Frameworks */,
+				85136D75307EEF0A004F2EDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				85136D79307EEF0A004F2EDB /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				85136D7A307EEF0A004F2EDB /* TinkerUITests */,
+			);
+			name = TinkerUITests;
+			productName = TinkerUITests;
+			productReference = 85136D77307EEF0A004F2EDB /* TinkerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		AAF1E000000000000000000A /* TinkerHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAF1E000000000000000000D /* Build configuration list for PBXNativeTarget "TinkerHelper" */;
+			buildPhases = (
+				AAF1E000000000000000000B /* Sources */,
+				AAF1E000000000000000000C /* Frameworks */,
+			);
+			buildRules = (
+			);
+			fileSystemSynchronizedGroups = (
+				AAF1E0000000000000000002 /* TinkerHelper */,
+				AAF1E0000000000000000003 /* TinkerShared */,
+			);
+			name = TinkerHelper;
+			productName = TinkerHelper;
+			productReference = AAF1E0000000000000000001 /* TinkerHelper */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		85136D56307EEF09004F2EDB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2700;
+				LastUpgradeCheck = 2700;
+				TargetAttributes = {
+					85136D5D307EEF09004F2EDB = {
+						CreatedOnToolsVersion = 27.0;
+					};
+					85136D6C307EEF0A004F2EDB = {
+						CreatedOnToolsVersion = 27.0;
+						TestTargetID = 85136D5D307EEF09004F2EDB;
+					};
+					85136D76307EEF0A004F2EDB = {
+						CreatedOnToolsVersion = 27.0;
+						TestTargetID = 85136D5D307EEF09004F2EDB;
+					};
+					AAF1E000000000000000000A = {
+						CreatedOnToolsVersion = 27.0;
+					};
+				};
+			};
+			buildConfigurationList = 85136D59307EEF09004F2EDB /* Build configuration list for PBXProject "Tinker" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 85136D55307EEF09004F2EDB;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 85136D5F307EEF09004F2EDB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				85136D5D307EEF09004F2EDB /* Tinker */,
+				85136D6C307EEF0A004F2EDB /* TinkerTests */,
+				85136D76307EEF0A004F2EDB /* TinkerUITests */,
+				AAF1E000000000000000000A /* TinkerHelper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		85136D5C307EEF09004F2EDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+		85136D6B307EEF0A004F2EDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+		85136D75307EEF0A004F2EDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		85136D5A307EEF09004F2EDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+		85136D69307EEF0A004F2EDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+		85136D73307EEF0A004F2EDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+		AAF1E000000000000000000B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		85136D6F307EEF0A004F2EDB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 85136D5D307EEF09004F2EDB /* Tinker */;
+			targetProxy = 85136D6E307EEF0A004F2EDB /* PBXContainerItemProxy */;
+		};
+		85136D79307EEF0A004F2EDB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 85136D5D307EEF09004F2EDB /* Tinker */;
+			targetProxy = 85136D78307EEF0A004F2EDB /* PBXContainerItemProxy */;
+		};
+		AAF1E0000000000000000011 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AAF1E000000000000000000A /* TinkerHelper */;
+			targetProxy = AAF1E0000000000000000010 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		85136D7D307EEF0A004F2EDB /* Debug configuration for PBXProject "Tinker" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = H27DCAP274;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		85136D7E307EEF0A004F2EDB /* Release configuration for PBXProject "Tinker" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = H27DCAP274;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		85136D80307EEF0A004F2EDB /* Debug configuration for PBXNativeTarget "Tinker" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H27DCAP274;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Tinker;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.brandonthomas.Tinker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = auto;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = macosx;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				XROS_DEPLOYMENT_TARGET = 27.0;
+			};
+			name = Debug;
+		};
+		85136D81307EEF0A004F2EDB /* Release configuration for PBXNativeTarget "Tinker" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H27DCAP274;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Tinker;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.brandonthomas.Tinker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = auto;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = macosx;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				XROS_DEPLOYMENT_TARGET = 27.0;
+			};
+			name = Release;
+		};
+		85136D83307EEF0A004F2EDB /* Debug configuration for PBXNativeTarget "TinkerTests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H27DCAP274;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.brandonthomas.TinkerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tinker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Tinker";
+				XROS_DEPLOYMENT_TARGET = 27.0;
+			};
+			name = Debug;
+		};
+		85136D84307EEF0A004F2EDB /* Release configuration for PBXNativeTarget "TinkerTests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H27DCAP274;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.brandonthomas.TinkerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tinker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Tinker";
+				XROS_DEPLOYMENT_TARGET = 27.0;
+			};
+			name = Release;
+		};
+		85136D86307EEF0A004F2EDB /* Debug configuration for PBXNativeTarget "TinkerUITests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H27DCAP274;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.brandonthomas.TinkerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_TARGET_NAME = Tinker;
+				XROS_DEPLOYMENT_TARGET = 27.0;
+			};
+			name = Debug;
+		};
+		85136D87307EEF0A004F2EDB /* Release configuration for PBXNativeTarget "TinkerUITests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H27DCAP274;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.brandonthomas.TinkerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_TARGET_NAME = Tinker;
+				XROS_DEPLOYMENT_TARGET = 27.0;
+			};
+			name = Release;
+		};
+		AAF1E000000000000000000E /* Debug configuration for PBXNativeTarget "TinkerHelper" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CREATE_INFOPLIST_SECTION_IN_BINARY = YES;
+				DEVELOPMENT_TEAM = H27DCAP274;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.brandonthomas.Tinker.helper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		AAF1E000000000000000000F /* Release configuration for PBXNativeTarget "TinkerHelper" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CREATE_INFOPLIST_SECTION_IN_BINARY = YES;
+				DEVELOPMENT_TEAM = H27DCAP274;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.brandonthomas.Tinker.helper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		85136D59307EEF09004F2EDB /* Build configuration list for PBXProject "Tinker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85136D7D307EEF0A004F2EDB /* Debug configuration for PBXProject "Tinker" */,
+				85136D7E307EEF0A004F2EDB /* Release configuration for PBXProject "Tinker" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		85136D7F307EEF0A004F2EDB /* Build configuration list for PBXNativeTarget "Tinker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85136D80307EEF0A004F2EDB /* Debug configuration for PBXNativeTarget "Tinker" */,
+				85136D81307EEF0A004F2EDB /* Release configuration for PBXNativeTarget "Tinker" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		85136D82307EEF0A004F2EDB /* Build configuration list for PBXNativeTarget "TinkerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85136D83307EEF0A004F2EDB /* Debug configuration for PBXNativeTarget "TinkerTests" */,
+				85136D84307EEF0A004F2EDB /* Release configuration for PBXNativeTarget "TinkerTests" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		85136D85307EEF0A004F2EDB /* Build configuration list for PBXNativeTarget "TinkerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85136D86307EEF0A004F2EDB /* Debug configuration for PBXNativeTarget "TinkerUITests" */,
+				85136D87307EEF0A004F2EDB /* Release configuration for PBXNativeTarget "TinkerUITests" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		AAF1E000000000000000000D /* Build configuration list for PBXNativeTarget "TinkerHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAF1E000000000000000000E /* Debug configuration for PBXNativeTarget "TinkerHelper" */,
+				AAF1E000000000000000000F /* Release configuration for PBXNativeTarget "TinkerHelper" */,
+			);
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 85136D56307EEF09004F2EDB /* Project object */;
+	validationLevel = 1;
+}

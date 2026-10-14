@@ -1,0 +1,2569 @@
+{
+  "version": 1,
+  "categories": [
+    {
+      "id": "dock",
+      "title": "Dock & Mission Control",
+      "section": "Desktop",
+      "symbol": "dock.rectangle",
+      "color": "teal"
+    },
+    {
+      "id": "finder",
+      "title": "Finder",
+      "section": "Desktop",
+      "symbol": "folder.fill",
+      "color": "cyan"
+    },
+    {
+      "id": "menus",
+      "title": "Menu Bar & Menus",
+      "section": "Desktop",
+      "symbol": "menubar.rectangle",
+      "color": "purple"
+    },
+    {
+      "id": "windows",
+      "title": "Windows & Dialogs",
+      "section": "Desktop",
+      "symbol": "macwindow",
+      "color": "orange"
+    },
+    {
+      "id": "security",
+      "title": "Security & Privacy",
+      "section": "System",
+      "symbol": "lock.shield.fill",
+      "color": "blue"
+    },
+    {
+      "id": "system",
+      "title": "System",
+      "section": "System",
+      "symbol": "desktopcomputer",
+      "color": "gray"
+    },
+    {
+      "id": "login",
+      "title": "Login Window",
+      "section": "System",
+      "symbol": "person.crop.rectangle.fill",
+      "color": "indigo"
+    },
+    {
+      "id": "appearance",
+      "title": "Appearance",
+      "section": "Personalization",
+      "symbol": "paintbrush.fill",
+      "color": "pink"
+    },
+    {
+      "id": "keyboard",
+      "title": "Keyboard & Text",
+      "section": "Personalization",
+      "symbol": "keyboard.fill",
+      "color": "brown"
+    },
+    {
+      "id": "screenshots",
+      "title": "Screenshots",
+      "section": "Personalization",
+      "symbol": "camera.viewfinder",
+      "color": "red"
+    },
+    {
+      "id": "apps",
+      "title": "Apps",
+      "section": "Apps",
+      "symbol": "square.grid.2x2.fill",
+      "color": "green"
+    },
+    {
+      "id": "developer",
+      "title": "Developer Tools",
+      "section": "Apps",
+      "symbol": "hammer.fill",
+      "color": "orange"
+    }
+  ],
+  "settings": [
+    {
+      "id": "dock.position",
+      "category": "dock",
+      "group": "Layout",
+      "title": "Position on screen",
+      "tier": "personal",
+      "store": {
+        "domain": "com.apple.dock",
+        "key": "orientation"
+      },
+      "valueType": "string",
+      "control": {
+        "type": "choice",
+        "options": [
+          {
+            "label": "Left",
+            "value": "left"
+          },
+          {
+            "label": "Bottom",
+            "value": "bottom"
+          },
+          {
+            "label": "Right",
+            "value": "right"
+          }
+        ],
+        "unset": "bottom"
+      },
+      "restart": [
+        "Dock"
+      ]
+    },
+    {
+      "id": "dock.icon-size",
+      "category": "dock",
+      "group": "Layout",
+      "title": "Icon size",
+      "tier": "personal",
+      "store": {
+        "domain": "com.apple.dock",
+        "key": "tilesize"
+      },
+      "valueType": "double",
+      "control": {
+        "type": "number",
+        "min": 16,
+        "max": 128,
+        "step": 1,
+        "unit": "pt"
+      },
+      "restart": [
+        "Dock"
+      ]
+    },
+    {
+      "id": "dock.magnification",
+      "category": "dock",
+      "group": "Layout",
+      "title": "Magnification",
+      "tier": "personal",
+      "store": {
+        "domain": "com.apple.dock",
+        "key": "magnification"
+      },
+      "valueType": "bool",
+      "control": {
+        "type": "toggle",
+        "on": true,
+        "off": false,
+        "unset": "off"
+      },
+      "restart": [
+        "Dock"
+      ]
+    },
+    {
+      "id": "dock.magnified-size",
+      "category": "dock",
+      "group": "Layout",
+      "title": "Magnified icon size",
+      "tier": "personal",
+      "store": {
+        "domain": "com.apple.dock",
+        "key": "largesize"
+      },
+      "valueType": "double",
+      "control": {
+        "type": "number",
+        "min": 16,
+        "max": 128,
+        "step": 1,
+        "unit": "pt"
+      },
+      "restart": [
+        "Dock"
+      ]
+    },
+    {
+      "id": "dock.lock-size",
+      "category": "dock",
+      "group": "Layout",
+      "title": "Lock the icon size",
+      "tier": "advanced",
+      "store": {
+        "domain": "com.apple.dock",
+        "key": "size-immutable"
+      },
+      "valueType": "bool",
+      "control": {
+        "type": "toggle",
+        "on": true,
+        "off": null
+      },
+      "restart": [
+        "Dock"
+      ]
+    },
+    {
+      "id": "dock.lock-contents",
+      "category": "dock",
+      "group": "Layout",
+      "title": "Lock the contents of the Dock",
+      "tier": "advanced",
+      "store": {
+        "domain": "com.apple.dock",
+        "key": "contents-immutable"
+      },
+      "valueType": "bool",
+      "control": {
+        "type": "toggle",
+        "on": true,
+        "off": null
+      },
+      "restart": [
+        "Dock"
+      ]
+    },
+    {
+      "id": "dock.minimize-effect",
+      "category": "dock",
+      "group": "Behavior",
+      "title": "Minimize windows using",
+      "tier": "personal",
+      "store": {
+        "domain": "com.apple.dock",
+        "key": "mineffect"
+      },
+      "valueType": "string",
+      "control": {
+        "type": "choice",
+        "options": [
+          {
+            "label": "Genie effect",
+            "value": "genie"
+          },
+          {
+            "label": "Scale effect",
+            "value": "scale"
+          },
+          {
+            "label": "Suck effect",
+            "value": "suck"
+          }
+        ],
+        "unset": "genie"
+      },
+      "restart": [
+        "Dock"
+      ]
+    },
+    {
+      "id": "dock.autohide",
+      "category": "dock",
+      "group": "Behavior",
+      "title": "Automatically hide and show the Dock",
+      "tier": "personal",
+      "store": {
+        "domain": "com.apple.dock",
+        "key": "autohide"
+      },
+      "valueType": "bool",
+      "control": {
+        "type": "toggle",
+        "on": true,
+        "off": false,
+        "unset": "off"
+      },
+      "restart": [
+        "Dock"
+      ]
+    },
+    {
+      "id": "dock.show-delay",
+      "category": "dock",
+      "group": "Behavior",
+      "title": "Show delay",
+      "tier": "personal",
+      "store": {
+        "domain": "com.apple.dock",
+        "key": "autohide-delay"
+      },
+      "valueType": "double",
+      "control": {
+        "type": "number",
+        "min": 0,
+        "max": 2,
+        "step": 0.05,
+        "unit": "s"
+      },
+      "detail": "How long the pointer rests at the screen edge before the Dock starts to appear.",
+      "restart": [
+        "Dock"
+      ]
+    },
+    {
+      "id": "dock.slide-animation",
+      "category": "dock",
+      "group": "Behavior",
+      "title": "Slide animation",
+      "tier": "personal",
+      "store": {
+        "domain": "com.apple.dock",
+        "key": "autohide-time-modifier"
+      },
+      "valueType": "double",
+      "control": {
+        "type": "number",
+        "min": 0,
+        "max": 2,
+        "step": 0.05
+      },
+      "detail": "How long the show and hide slide takes.",
+      "restart": [
+        "Dock"
+      ]
+    },
+    {
+      "id": "dock.slow-motion",
+      "category": "dock",
+      "group": "Behavior",
+      "title": "Slow-motion effects",
+      "tier": "advanced",
+      "store": {
+        "domain": "com.apple.dock",
+        "key": "slow-motion-allowed"
+      },
+      "valueType": "bool",
+      "control": {
+        "type": "toggle",
+        "on": true,
+        "off": null
+      },
+      "detail": "Hold Shift while minimizing a window or opening Mission Control.",
+      "restart": [
+        "Dock"
+      ]
+    },
+    {
+      "id": "dock.dim-hidden-apps",
+      "category": "dock",
+      "group": "Contents",
+      "title": "Use transparent icons for hidden applications",
+      "tier": "personal",
+      "store": {
+        "domain": "com.apple.dock",
+        "key": "showhidden"
+      },
+      "valueType": "bool",
+      "control": {
+        "type": "toggle",
+        "on": true,
+        "off": false,
+        "unset": "off"
+      },
+      "restart": [
+        "Dock"
+      ]
+    },
+    {
+      "id": "dock.only-open-apps",
+      "category": "dock",
+      "group": "Contents",
+      "title": "Only show open applications",
+      "tier": "advanced",
+      "store": {
+        "domain": "com.apple.dock",
+        "key": "static-only"
+      },
+      "valueType": "bool",
+      "control": {
+        "type": "toggle",
+        "on": true,
+        "off": null
+      },
+      "restart": [
+        "Dock"
+      ]
+    },
+    {
+      "id": "dock.show-recents",
+      "category": "dock",
+      "group": "Contents",
+      "title": "Show suggested and recent apps",
+      "tier": "advanced",
+      "store": {
+        "domain": "com.apple.dock",
+        "key": "show-recents"
+      },
+      "valueType": "bool",
+      "control": {
+        "type": "toggle",
+        "on": true,
+        "off": false,
+        "unset": "on"
+      },
+      "restart": [
+        "Dock"
+      ]
+    },
+    {
+      "id": "dock.recent-count",
+      "category": "dock",
+      "group": "Contents",
+      "title": "Number of recent applications",
+      "tier": "advanced",
+      "store": {
+        "domain": "com.apple.dock",
+        "key": "show-recent-count"
+      },
+      "valueType": "int",
+      "control": {
+        "type": "number",
+        "min": 1,
+        "max": 10,
+        "step": 1,
+        "unset": 3
+      },
+      "restart": [
+        "Dock"
+      ]
+    },
+    {
+      "id": "dock.stack-hover",
+      "category": "dock",
+      "group": "Contents",
+      "title": "Highlight stack items on hover in grid view",
+      "tier": "advanced",
+      "store": {
+        "domain": "com.apple.dock",
+        "key": "mouse-over-hilite-stack"
+      },
+      "valueType": "bool",
+      "control": {
+        "type": "toggle",
+        "on": true,
+        "off": null
+      },
+      "restart": [
+        "Dock"
+      ]
+    },
+    {
+      "id": "dock.group-by-app",
+      "category": "dock",
+      "group": "Mission Control",
+      "title": "Group windows by application",
+      "tier": "personal",
+      "store": {
+        "domain": "com.apple.dock",
+        "key": "expose-group-apps"
+      },
+      "valueType": "bool",
+      "control": {
+        "type": "toggle",
+        "on": true,
+        "off": false,
+        "unset": "off"
+      },
+      "restart": [
+        "Dock"
+      ]
+    },
+    {
+      "id": "dock.app-expose-gesture",
+      "category": "dock",
+      "group": "Mission Control",
+      "title": "App Exposé swipe gesture",
+      "tier": "personal",
+      "store": {
+        "domain": "com.apple.dock",
+        "key": "showAppExposeGestureEnabled"
+      },
+      "valueType": "bool",
+      "control": {
+        "type": "toggle",
+        "on": true,
+        "off": false,
+        "unset": "off"
+      },
+      "restart": [
+        "Dock"
+      ]
+    },
+    {
+      "id": "dock.desktop-items",
+      "category": "dock",
+      "group": "Desktop",
+      "title": "Show items on the desktop",
+      "tier": "personal",
+      "store": {
+        "domain": "com.apple.WindowManager",
+        "key": "StandardHideDesktopIcons"
+      },
+      "valueType": "bool",
+      "control": {
+        "type": "toggle",
+        "on": false,
+        "off": true,
+        "unset": "on"
+      }
+    },
+    {
+      "id": "dock.tiled-margins",
+      "category": "dock",
+      "group": "Desktop",
+      "title": "Tiled windows have margins",
+      "tier": "personal",
+      "store": {
+        "domain": "com.apple.WindowManager",
+        "key": "EnableTiledWindowMargins"
+      },
+      "valueType": "bool",
+      "control": {
+        "type": "toggle",
+        "on": true,
+        "off": false,
+        "unset": "on"
+      }
+    },
+    {
+      "id": "finder.hidden-files",
+      "category": "finder",
+      "group": "Visibility",
+      "title": "Show hidden files and folders",
+      "tier": "recommended",
+      "store": {
+        "domain": "com.apple.finder",
+        "key": "AppleShowAllFiles"
+      },
+      "valueType": "bool",
+      "control": {
+        "type": "toggle",
+        "on": true,
+        "off": false,
+        "unset": "off"
+      },
+      "restart": [
+        "Finder"
+      ],
+      "profileValue": true
+    },
+    {
+      "id": "finder.all-extensions",
+      "category": "finder",
+      "group": "Visibility",
+      "title": "Show all filename extensions",
+      "tier": "recommended",
+      "store": {
+        "domain": "NSGlobalDomain",
+        "key": "AppleShowAllExtensions"
+      },
+      "valueType": "bool",
+      "control": {
+        "type": "toggle",
+        "on": true,
+        "off": false,
+        "unset": "off"
+      },
+      "restart": [
+        "Finder"
+      ],
+      "profileValue": true
+    },
+    {
+      "id": "finder.extension-warning",
+      "category": "finder",
+      "group": "Visibility",
+      "title": "Warn before changing an extension",
+      "tier": "recommended",
+      "store": {
+        "domain": "com.apple.finder",
+        "key": "FXEnableExtensionChangeWarning"
+      },
+      "valueType": "bool",
+      "control": {
+        "type": "toggle",
+        "on": true,
+        "off": false,
+        "unset": "on"
+      },
+      "restart": [
+        "Finder"
+      ],
+      "profileValue": false
+    },
+    {
+      "id": "finder.ds-store-network",
+      "category": "finder",
+      "group": "Visibility",
+      "title": "Keep .DS_Store files off network volumes",
+      "tier": "recommended",
+      "store": {
+        "domain": "com.apple.desktopservices",
+        "key": "DSDontWriteNetworkStores"
+      },
+      "valueType": "bool",
+      "control": {
+        "type": "toggle",
+        "on": true,
+        "off": false,
+        "unset": "off"
+      },
+      "profileValue": true
+    },
+    {
+      "id": "finder.ds-store-usb",
+      "category": "finder",
+      "group": "Visibility",
+      "title": "Keep .DS_Store files off USB volumes",
+      "tier": "recommended",
+      "store": {
+        "domain": "com.apple.desktopservices",
+        "key": "DSDontWriteUSBStores"
+      },
+      "valueType": "bool",
+      "control": {
+        "type": "toggle",
+        "on": true,
+        "off": false,
+        "unset": "off"
+      },
+      "profileValue": true
+    },
+    {
+      "id": "finder.status-bar",
+      "category": "finder",
+      "group": "Windows",
+      "title": "Show status bar",
+      "tier": "recommended",
+      "store": {
+        "domain": "com.apple.finder",
+        "key": "ShowStatusBar"
+      },
+      "valueType": "bool",
+      "control": {
+        "type": "toggle",
+        "on": true,
+        "off": false,
+        "unset": "off"
+      },
+      "restart": [
+        "Finder"
+      ],
+      "profileValue": true
+    },
+    {
+      "id": "finder.path-bar",
+      "category": "finder",
+      "group": "Windows",
+      "title": "Show path bar",
+      "tier": "recommended",
+      "store": {
+        "domain": "com.apple.finder",
+        "key": "ShowPathbar"
+      },
+      "valueType": "bool",
+      "control": {
+        "type": "toggle",
+        "on": true,
+        "off": false,
+        "unset": "off"
+      },
+      "restart": [
+        "Finder"
+      ],
+      "profileValue": true
+    },
+    {
+      "id": "finder.path-bar-home",
+      "category": "finder",
+      "group": "Windows",
+      "title": "Path bar starts at the home folder",
+      "tier": "advanced",
+      "store": {
+        "domain": "com.apple.finder",
+        "key": "PathBarRootAtHome"
+      },
+      "valueType": "bool",
+      "control": {
+        "type": "toggle",
+        "on": true,
+        "off": null
+      },
+      "restart": [
+        "Finder"
+      ]
+    },
+    {
+      "id": "finder.path-in-title",
+      "category": "finder",
+      "group": "Windows",
+      "title": "Show the full path in the window title",
+      "tier": "advanced",
+      "store": {
+        "domain": "com.apple.finder",
+        "key": "_FXShowPosixPathInTitle"
+      },
+      "valueType": "bool",
+      "control": {
+        "type": "toggle",
+        "on": true,
+        "off": null
+      },
+      "restart": [
+        "Finder"
+      ]
+    },
+    {
+      "id": "finder.title-icon-delay",
+      "category": "finder",
+      "group": "Windows",
+      "title": "Show window title icons without delay",
+      "tier": "advanced",
+      "store": {
+        "domain": "NSGlobalDomain",
+        "key": "NSToolbarTitleViewRolloverDelay"
+      },
+      "valueType": "double",
+      "control": {
+        "type": "toggle",
+        "on": 0,
+        "off": null
+      },
+      "restart": [
+        "Finder"
+      ]
+    },
+    {
+      "id": "finder.autosize-columns",
+      "category": "finder",
+      "group": "Windows",
+      "title": "Autosize columns",
+      "tier": "advanced",
+      "store": {
+        "domain": "com.apple.finder",
+        "key": "_FXEnableColumnAutoSizing"
+      },
+      "valueType": "bool",
+      "control": {
+        "type": "toggle",
+        "on": true,
+        "off": null
+      },
+      "restart": [
+        "Finder"
+      ]
+    },
+    {
+      "id": "finder.default-view",
+      "category": "finder",
+      "group": "Windows",
+      "title": "Default view",
+      "tier": "personal",
+      "store": {
+        "domain": "com.apple.finder",
+        "key": "FXPreferredViewStyle"
+      },
+      "valueType": "string",
+      "control": {
+        "type": "choice",
+        "options": [
+          {
+            "label": "Icons",
+            "value": "icnv"
+          },
+          {
+            "label": "List",
+            "value": "Nlsv"
+          },
+          {
+            "label": "Columns",
+            "value": "clmv"
+          },
+          {
+            "label": "Gallery",
+            "value": "glyv"
+          }
+        ],
+        "unset": "icnv"
+      },
+      "restart": [
+        "Finder"
+      ]
+    },
+    {
+      "id": "finder.new-window-target",
+      "category": "finder",
+      "group": "Windows",
+      "title": "New Finder windows show",
+      "tier": "personal",
+      "system": "finderNewWindowTarget",
+      "valueType": "string",
+      "control": {
+        "type": "folder"
+      },
+      "restart": [
+        "Finder"
+      ]
+    },
+    {
+      "id": "finder.search-scope",
+      "category": "finder",
+      "group": "Search",
+      "title": "When performing a search",
+      "tier": "recommended",
+      "store": {
+        "domain": "com.apple.finder",
+        "key": "FXDefaultSearchScope"
+      },
+      "valueType": "string",
+      "control": {
+        "type": "choice",
+        "options": [
+          {
+            "label": "Search This Mac",
+            "value": "SCev"
+          },
+          {
+            "label": "Search the current folder",
+            "value": "SCcf"
+          },
+          {
+            "label": "Use the previous search scope",
+            "value": "SCsp"
+          }
+        ],
+        "unset": "SCev"
+      },
+      "restart": [
+        "Finder"
+      ],
+      "profileValue": "SCcf"
+    },
+    {
+      "id": "finder.desktop-icons",
+      "category": "finder",
+      "group": "Desktop",
+      "title": "Show the desktop icons",
+      "tier": "advanced",
+      "store": {
+        "domain": "com.apple.finder",
+        "key": "CreateDesktop"
+      },
+      "valueType": "bool",
+      "control": {
+        "type": "toggle",
+        "on": null,
+        "off": false
+      },
+      "restart": [
+        "Finder"
+      ]
+    },
+    {
+      "id": "finder.desktop-hard-disks",
+      "category": "finder",
+      "group": "Desktop",
+      "title": "Hard disks on the desktop",
+      "tier": "personal",
+      "store": {
+        "domain": "com.apple.finder",
+        "key": "ShowHardDrivesOnDesktop"
+      },
+      "valueType": "bool",
+      "control": {
+        "type": "toggle",
+        "on": true,
+        "off": false,
+        "unset": "off"
+      },
+      "restart": [
+        "Finder"
+      ]
+    },
+    {
+      "id": "finder.desktop-external-disks",
+      "category": "finder",
+      "group": "Desktop",
+      "title": "External disks on the desktop",
+      "tier": "personal",
+      "store": {
+        "domain": "com.apple.finder",
+        "key": "ShowExternalHardDrivesOnDesktop"
+      },
+      "valueType": "bool",
+      "control": {
+        "type": "toggle",
+        "on": true,
+        "off": false,
+        "unset": "on"
+      },
+      "restart": [
+        "Finder"
+      ]
+    },
+    {
+      "id": "finder.desktop-removable",
+      "category": "finder",
+      "group": "Desktop",
+      "title": "CDs, DVDs and iPods on the desktop",
+      "tier": "personal",
+      "store": {
+        "domain": "com.apple.finder",
+        "key": "ShowRemovableMediaOnDesktop"
+      },
+      "valueType": "bool",
+      "control": {
+        "type": "toggle",
+        "on": true,
+        "off": false,
+        "unset": "on"
+      },
+      "restart": [
+        "Finder"
+      ]
+    },
+    {
+      "id": "finder.desktop-servers",
+      "category": "finder",
+      "group": "Desktop",
+      "title": "Connected servers on the desktop",
+      "tier": "personal",
+      "store": {
+        "domain": "com.apple.finder",
+        "key": "ShowMountedServersOnDesktop"
+      },
+      "valueType": "bool",
+      "control": {
+        "type": "toggle",
+        "on": true,
+        "off": false,
+        "unset": "off"
+      },
+      "restart": [
+        "Finder"
+      ]
+    },
+    {
+      "id": "finder.window-zooming",
+      "category": "finder",
+      "group": "Effects",
+      "title": "Use window zooming",
+      "tier": "advanced",
+      "store": {
+        "domain": "com.apple.finder",
+        "key": "AnimateWindowZoom"
+      },
+      "valueType": "bool",
+      "control": {
+        "type": "toggle",
+        "on": null,
+        "off": false
+      },
+      "restart": [
+        "Finder"
+      ]
+    },
+    {
+      "id": "finder.animate-info",
+      "category": "finder",
+      "group": "Effects",
+      "title": "Animate the Info window",
+      "tier": "advanced",
+      "store": {
+        "domain": "com.apple.finder",
+        "key": "AnimateInfoPanes"
+      },
+      "valueType": "bool",
+      "control": {
+        "type": "toggle",
+        "on": null,
+        "off": false
+      },
+      "restart": [
+        "Finder"
+      ]
+    },
+    {
+      "id": "finder.quick-look-background",
+      "category": "finder",
+      "group": "Quick Look",
+      "title": "Keep Quick Look open when Finder is not in front",
+      "tier": "advanced",
+      "store": {
+        "domain": "com.apple.finder",
+        "key": "QLHidePanelOnDeactivate"
+      },
+      "valueType": "bool",
+      "control": {
+        "type": "toggle",
+        "on": null,
+        "off": true
+      },
+      "restart": [
+        "Finder"
+      ]
+    },
+    {
+      "id": "finder.quick-look-close-effect",
+      "category": "finder",
+      "group": "Quick Look",
+      "title": "Animate closing the Quick Look window",
+      "tier": "advanced",
+      "store": {
+        "domain": "NSGlobalDomain",
+        "key": "QLPanelAnimationDuration"
+      },
+      "valueType": "double",
+      "control": {
+        "type": "toggle",
+        "on": null,
+        "off": 0
+      },
+      "restart": [
+        "Finder"
+      ]
+    },
+    {
+      "id": "finder.trash-30-days",
+      "category": "finder",
+      "group": "Trash",
+      "title": "Remove items from the Trash after 30 days",
+      "tier": "personal",
+      "store": {
+        "domain": "com.apple.finder",
+        "key": "FXRemoveOldTrashItems"
+      },
+      "valueType": "bool",
+      "control": {
+        "type": "toggle",
+        "on": true,
+        "off": false,
+        "unset": "off"
+      },
+      "restart": [
+        "Finder"
+      ]
+    },
+    {
+      "id": "finder.menu-settings",
+      "category": "finder",
+      "group": "Menu Items",
+      "title": "Finder > Settings",
+      "tier": "advanced",
+      "store": {
+        "domain": "com.apple.finder",
+        "key": "ProhibitFinderPreferences"
+      },
+      "valueType": "bool",
+      "control": {
+        "type": "toggle",
+        "on": null,
+        "off": true
+      },
+      "restart": [
+        "Finder"
+      ]
+    },
+    {
+      "id": "finder.menu-empty-trash",
+      "category": "finder",
+      "group": "Menu Items",
+      "title": "Finder > Empty Trash",
+      "tier": "advanced",
+      "store": {
+        "domain": "com.apple.finder",
+        "key": "ProhibitEmptyTrash"
+      },
+      "valueType": "bool",
+      "control": {
+        "type": "toggle",
+        "on": null,
+        "off": true
+      },
+      "restart": [
+        "Finder"
+      ]
+    },
+    {
+      "id": "finder.menu-quit",
+      "category": "finder",
+      "group": "Menu Items",
+      "title": "Finder > Quit Finder",
+      "tier": "advanced",
+      "store": {
+        "domain": "com.apple.finder",
+        "key": "QuitMenuItem"
+      },
+      "valueType": "bool",
+      "control": {
+        "type": "toggle",
+        "on": true,
+        "off": null
+      },
+      "restart": [
+        "Finder"
+      ]
+    },
+    {
+      "id": "finder.menu-eject",
+      "category": "finder",
+      "group": "Menu Items",
+      "title": "File > Eject",
+      "tier": "advanced",
+      "store": {
+        "domain": "com.apple.finder",
+        "key": "ProhibitEject"
+      },
+      "valueType": "bool",
+      "control": {
+        "type": "toggle",
+        "on": null,
+        "off": true
+      },
+      "restart": [
+        "Finder"
+      ]
+    },
+    {
+      "id": "finder.menu-customize-toolbar",
+      "category": "finder",
+      "group": "Menu Items",
+      "title": "View > Customize Toolbar",
+      "tier": "advanced",
+      "store": {
+        "domain": "com.apple.finder",
+        "key": "Toolbar-immutable"
+      },
+      "valueType": "bool",
+      "control": {
+        "type": "toggle",
+        "on": null,
+        "off": true
+      },
+      "restart": [
+        "Finder"
+      ]
+    },
+    {
+      "id": "finder.menu-view-options",
+      "category": "finder",
+      "group": "Menu Items",
+      "title": "View > Show View Options",
+      "tier": "advanced",
+      "store": {
+        "domain": "com.apple.finder",
+        "key": "ViewOptions-immutable"
+      },
+      "valueType": "bool",
+      "control": {
+        "type": "toggle",
+        "on": null,
+        "off": true
+      },
+      "restart": [
+        "Finder"
+      ]
+    },
+    {
+      "id": "finder.menu-go-to-folder",
+      "category": "finder",
+      "group": "Menu Items",
+      "title": "Go > Go to Folder",
+      "tier": "advanced",
+      "store": {
+        "domain": "com.apple.finder",
+        "key": "ProhibitGoToFolder"
+      },
+      "valueType": "bool",
+      "control": {
+        "type": "toggle",
+        "on": null,
+        "off": true
+      },
+      "restart": [
+        "Finder"
+      ]
+    },
+    {
+      "id": "finder.menu-connect-to-server",
+      "category": "finder",
+      "group": "Menu Items",
+      "title": "Go > Connect to Server",
+      "tier": "advanced",
+      "store": {
+        "domain": "com.apple.finder",
+        "key": "ProhibitConnectTo"
+      },
+      "valueType": "bool",
+      "control": {
+        "type": "toggle",
+        "on": null,
+        "off": true
+      },
+      "restart": [
+        "Finder"
+      ]
+    },
+    {
+      "id": "menus.icon-spacing",
+      "category": "menus",
+      "group": "Menu Bar",
+      "title": "Icon spacing",
+      "tier": "personal",
+      "store": {
+        "domain": "NSGlobalDomain",
+        "key": "NSStatusItemSpacing",
+        "host": "current"
+      },
+      "valueType": "int",
+      "control": {
+        "type": "number",
+        "min": 0,
+        "max": 24,
+        "step": 1,
+        "unit": "pt"
+      },
+      "detail": "Apps pick this up the next time they open."
+    },
+    {
+      "id": "menus.menu-icons",
+      "category": "menus",
+      "group": "Menu Bar",
+      "title": "Show icons in menus",
+      "tier": "advanced",
+      "store": {
+        "domain": "NSGlobalDomain",
+        "key": "NSMenuEnableActionImages"
+      },
+      "valueType": "bool",
+      "control": {
+        "type": "toggle",
+        "on": null,
+        "off": false
+      },
+      "detail": "Apps pick this up the next time they open."
+    },
+    {
+      "id": "menus.clock-seconds",
+      "category": "menus",
+      "group": "Clock",
+      "title": "Display the time with seconds",
+      "tier": "personal",
+      "store": {
+        "domain": "com.apple.menuextra.clock",
+        "key": "ShowSeconds"
+      },
+      "valueType": "bool",
+      "control": {
+        "type": "toggle",
+        "on": true,
+        "off": false,
+        "unset": "off"
+      }
+    },
+    {
+      "id": "menus.clock-weekday",
+      "category": "menus",
+      "group": "Clock",
+      "title": "Show the day of the week",
+      "tier": "personal",
+      "store": {
+        "domain": "com.apple.menuextra.clock",
+        "key": "ShowDayOfWeek"
+      },
+      "valueType": "bool",
+      "control": {
+        "type": "toggle",
+        "on": true,
+        "off": false,
+        "unset": "on"
+      }
+    },
+    {
+      "id": "menus.clock-date",
+      "category": "menus",
+      "group": "Clock",
+      "title": "Show date",
+      "tier": "personal",
+      "store": {
+        "domain": "com.apple.menuextra.clock",
+        "key": "ShowDate"
+      },
+      "valueType": "int",
+      "control": {
+        "type": "choice",
+        "options": [
+          {
+            "label": "When space allows",
+            "value": 0
+          },
+          {
+            "label": "Always",
+            "value": 1
+          },
+          {
+            "label": "Never",
+            "value": 2
+          }
+        ],
+        "unset": 0
+      }
+    },
+    {
+      "id": "menus.apple-power-items",
+      "category": "menus",
+      "group": "Apple Menu",
+      "title": "Restart, Shut Down and Log Out",
+      "tier": "advanced",
+      "store": {
+        "domain": "com.apple.loginwindow",
+        "key": "Kiosk",
+        "scope": "system"
+      },
+      "valueType": "string",
+      "control": {
+        "type": "toggle",
+        "on": null,
+        "off": "true"
+      }
+    },
+    {
+      "id": "windows.prefer-tabs",
+      "category": "windows",
+      "group": "Windows",
+      "title": "Prefer tabs when opening documents",
+      "tier": "personal",
+      "store": {
+        "domain": "NSGlobalDomain",
+        "key": "AppleWindowTabbingMode"
+      },
+      "valueType": "string",
+      "control": {
+        "type": "choice",
+        "options": [
+          {
+            "label": "Always",
+            "value": "always"
+          },
+          {
+            "label": "In Full Screen",
+            "value": "fullscreen"
+          },
+          {
+            "label": "Never",
+            "value": "manual"
+          }
+        ],
+        "unset": "fullscreen"
+      }
+    },
+    {
+      "id": "windows.animations",
+      "category": "windows",
+      "group": "Windows",
+      "title": "Window and alert animations",
+      "tier": "advanced",
+      "store": {
+        "domain": "NSGlobalDomain",
+        "key": "NSAutomaticWindowAnimationsEnabled"
+      },
+      "valueType": "bool",
+      "control": {
+        "type": "toggle",
+        "on": null,
+        "off": false
+      },
+      "detail": "Covers both opening/closing windows and system alert dialogs."
+    },
+    {
+      "id": "windows.drag-gesture",
+      "category": "windows",
+      "group": "Windows",
+      "title": "Move windows by dragging anywhere with Control-Command held",
+      "tier": "advanced",
+      "store": {
+        "domain": "NSGlobalDomain",
+        "key": "NSWindowShouldDragOnGesture"
+      },
+      "valueType": "bool",
+      "control": {
+        "type": "toggle",
+        "on": true,
+        "off": null
+      }
+    },
+    {
+      "id": "windows.corner-radius",
+      "category": "windows",
+      "group": "Windows",
+      "title": "Window corner radius",
+      "tier": "advanced",
+      "store": {
+        "domain": "NSGlobalDomain",
+        "key": "NSConvolutionOverride1"
+      },
+      "valueType": "int",
+      "control": {
+        "type": "number",
+        "min": 0,
+        "max": 40,
+        "step": 1
+      },
+      "detail": "Some applications may not respect this setting."
+    },
+    {
+      "id": "windows.scroll-bars",
+      "category": "windows",
+      "group": "Windows",
+      "title": "Show scroll bars",
+      "tier": "personal",
+      "store": {
+        "domain": "NSGlobalDomain",
+        "key": "AppleShowScrollBars"
+      },
+      "valueType": "string",
+      "control": {
+        "type": "choice",
+        "options": [
+          {
+            "label": "Automatically",
+            "value": "Automatic"
+          },
+          {
+            "label": "When scrolling",
+            "value": "WhenScrolling"
+          },
+          {
+            "label": "Always",
+            "value": "Always"
+          }
+        ],
+        "unset": "Automatic"
+      }
+    },
+    {
+      "id": "windows.scroll-click",
+      "category": "windows",
+      "group": "Windows",
+      "title": "Click in the scroll bar jumps to the spot clicked",
+      "tier": "personal",
+      "store": {
+        "domain": "NSGlobalDomain",
+        "key": "AppleScrollerPagingBehavior"
+      },
+      "valueType": "bool",
+      "control": {
+        "type": "toggle",
+        "on": true,
+        "off": false,
+        "unset": "off"
+      }
+    },
+    {
+      "id": "windows.expanded-save",
+      "category": "windows",
+      "group": "Dialogs",
+      "title": "Display the expanded Save As dialog",
+      "tier": "advanced",
+      "store": {
+        "domain": "NSGlobalDomain",
+        "key": "NSNavPanelExpandedStateForSaveMode"
+      },
+      "valueType": "bool",
+      "control": {
+        "type": "toggle",
+        "on": true,
+        "off": false,
+        "unset": "off"
+      }
+    },
+    {
+      "id": "windows.recent-documents",
+      "category": "windows",
+      "group": "Dialogs",
+      "title": "Items in Open Recent menus",
+      "tier": "advanced",
+      "store": {
+        "domain": "NSGlobalDomain",
+        "key": "NSRecentDocumentsLimit"
+      },
+      "valueType": "intString",
+      "control": {
+        "type": "number",
+        "min": 0,
+        "max": 50,
+        "step": 1,
+        "unset": 10
+      },
+      "detail": "0 hides the Open Recent menu item."
+    },
+    {
+      "id": "windows.recent-places",
+      "category": "windows",
+      "group": "Dialogs",
+      "title": "Recent places in Open and Save dialogs",
+      "tier": "advanced",
+      "store": {
+        "domain": "NSGlobalDomain",
+        "key": "NSNavRecentPlacesLimit"
+      },
+      "valueType": "int",
+      "control": {
+        "type": "number",
+        "min": 0,
+        "max": 20,
+        "step": 1,
+        "unset": 5
+      }
+    },
+    {
+      "id": "windows.help-tag-delay",
+      "category": "windows",
+      "group": "Help Tags",
+      "title": "Delay before help tags appear",
+      "tier": "advanced",
+      "store": {
+        "domain": "NSGlobalDomain",
+        "key": "NSInitialToolTipDelay"
+      },
+      "valueType": "int",
+      "control": {
+        "type": "number",
+        "min": 0,
+        "max": 3000,
+        "step": 100,
+        "unit": "ms"
+      }
+    },
+    {
+      "id": "windows.help-tag-size",
+      "category": "windows",
+      "group": "Help Tags",
+      "title": "Help tag text size",
+      "tier": "advanced",
+      "store": {
+        "domain": "NSGlobalDomain",
+        "key": "NSToolTipsFontSize"
+      },
+      "valueType": "int",
+      "control": {
+        "type": "number",
+        "min": 9,
+        "max": 18,
+        "step": 1,
+        "unit": "pt",
+        "unset": 11
+      }
+    },
+    {
+      "id": "security.gatekeeper",
+      "category": "security",
+      "group": "Protection",
+      "title": "Gatekeeper",
+      "tier": "recommended",
+      "system": "gatekeeper",
+      "valueType": "bool",
+      "control": {
+        "type": "status",
+        "onLabel": "Enabled",
+        "offLabel": "Disabled",
+        "actions": [
+          {
+            "title": "Enable",
+            "value": true,
+            "when": "off"
+          }
+        ]
+      },
+      "detail": "Checks that apps come from identified developers before they open.",
+      "profileValue": true
+    },
+    {
+      "id": "security.gatekeeper-anywhere",
+      "category": "security",
+      "group": "Protection",
+      "title": "Offer “Anywhere” in Privacy & Security",
+      "tier": "advanced",
+      "system": "gatekeeperAnywhereOption",
+      "valueType": "bool",
+      "control": {
+        "type": "toggle",
+        "on": true,
+        "off": false,
+        "unset": "off"
+      },
+      "detail": "Adds the “Anywhere” choice to “Allow applications from” and opens Privacy & Security so you can pick it. This does not turn Gatekeeper off by itself. Turning it off removes the choice and re-enables Gatekeeper."
+    },
+    {
+      "id": "security.firewall",
+      "category": "security",
+      "group": "Protection",
+      "title": "Firewall",
+      "tier": "recommended",
+      "system": "firewall",
+      "valueType": "bool",
+      "control": {
+        "type": "toggle",
+        "on": true,
+        "off": false,
+        "unset": "off"
+      },
+      "profileValue": true
+    },
+    {
+      "id": "security.remote-login",
+      "category": "security",
+      "group": "Protection",
+      "title": "Remote Login (SSH)",
+      "tier": "recommended",
+      "system": "remoteLogin",
+      "valueType": "bool",
+      "control": {
+        "type": "toggle",
+        "on": true,
+        "off": false,
+        "unset": "off"
+      },
+      "detail": "Lets other computers sign in to this Mac over SSH.",
+      "profileValue": false
+    },
+    {
+      "id": "security.filevault",
+      "category": "security",
+      "group": "Protection",
+      "title": "FileVault disk encryption",
+      "tier": "recommended",
+      "system": "fileVault",
+      "valueType": "bool",
+      "control": {
+        "type": "status",
+        "onLabel": "On",
+        "offLabel": "Off",
+        "actions": [
+          {
+            "title": "Open Settings…",
+            "value": true,
+            "when": "always"
+          }
+        ]
+      },
+      "profileValue": true
+    },
+    {
+      "id": "security.sip",
+      "category": "security",
+      "group": "Protection",
+      "title": "System Integrity Protection",
+      "tier": "recommended",
+      "system": "systemIntegrityProtection",
+      "valueType": "bool",
+      "control": {
+        "type": "status",
+        "onLabel": "Enabled",
+        "offLabel": "Disabled"
+      },
+      "detail": "Can only be changed from macOS Recovery, so Tinker reports it and nothing more.",
+      "profileValue": true
+    },
+    {
+      "id": "security.guest-account",
+      "category": "security",
+      "group": "Accounts",
+      "title": "Guest account",
+      "tier": "recommended",
+      "store": {
+        "domain": "com.apple.loginwindow",
+        "key": "GuestEnabled",
+        "scope": "system"
+      },
+      "valueType": "bool",
+      "control": {
+        "type": "toggle",
+        "on": true,
+        "off": false,
+        "unset": "off"
+      },
+      "profileValue": false
+    },
+    {
+      "id": "security.personalized-ads",
+      "category": "security",
+      "group": "Privacy",
+      "title": "Personalized ads",
+      "tier": "personal",
+      "store": {
+        "domain": "com.apple.AdLib",
+        "key": "allowApplePersonalizedAdvertising"
+      },
+      "valueType": "bool",
+      "control": {
+        "type": "toggle",
+        "on": true,
+        "off": false,
+        "unset": "on"
+      }
+    },
+    {
+      "id": "system.computer-name",
+      "category": "system",
+      "group": "Identity",
+      "title": "Computer name",
+      "tier": "personal",
+      "system": "computerName",
+      "valueType": "string",
+      "control": {
+        "type": "text",
+        "placeholder": "Name shown in Sharing"
+      },
+      "detail": "The name that others see for this Mac in AirDrop, Sharing and the Finder sidebar on other devices. Also affects this device's iCloud name."
+    },
+    {
+      "id": "system.local-host-name",
+      "category": "system",
+      "group": "Identity",
+      "title": "Local host name",
+      "tier": "personal",
+      "system": "localHostName",
+      "valueType": "string",
+      "control": {
+        "type": "text",
+        "placeholder": "my-mac"
+      },
+      "detail": "The name other devices on your network use, followed by .local. Letters, digits and hyphens only."
+    },
+    {
+      "id": "system.host-name",
+      "category": "system",
+      "group": "Identity",
+      "title": "Host name",
+      "tier": "personal",
+      "system": "hostName",
+      "valueType": "string",
+      "control": {
+        "type": "text",
+        "placeholder": "my-mac"
+      },
+      "detail": "The name Terminal and network tools report. Letters, digits, hyphens and dots only."
+    },
+    {
+      "id": "system.updates-download",
+      "category": "system",
+      "group": "Updates",
+      "title": "Download new updates when available",
+      "tier": "recommended",
+      "store": {
+        "domain": "com.apple.SoftwareUpdate",
+        "key": "AutomaticDownload",
+        "scope": "system"
+      },
+      "valueType": "bool",
+      "control": {
+        "type": "toggle",
+        "on": true,
+        "off": false,
+        "unset": "on"
+      },
+      "profileValue": true
+    },
+    {
+      "id": "system.updates-security",
+      "category": "system",
+      "group": "Updates",
+      "title": "Install security responses and system files",
+      "tier": "recommended",
+      "store": {
+        "domain": "com.apple.SoftwareUpdate",
+        "key": "CriticalUpdateInstall",
+        "scope": "system",
+        "mirrorKeys": [
+          "ConfigDataInstall"
+        ]
+      },
+      "valueType": "bool",
+      "control": {
+        "type": "toggle",
+        "on": true,
+        "off": false,
+        "unset": "on"
+      },
+      "profileValue": true
+    },
+    {
+      "id": "system.updates-macos",
+      "category": "system",
+      "group": "Updates",
+      "title": "Install macOS updates automatically",
+      "tier": "personal",
+      "store": {
+        "domain": "com.apple.SoftwareUpdate",
+        "key": "AutomaticallyInstallMacOSUpdates",
+        "scope": "system"
+      },
+      "valueType": "bool",
+      "control": {
+        "type": "toggle",
+        "on": true,
+        "off": false,
+        "unset": "off"
+      }
+    },
+    {
+      "id": "system.updates-app-store",
+      "category": "system",
+      "group": "Updates",
+      "title": "Install App Store updates automatically",
+      "tier": "personal",
+      "store": {
+        "domain": "com.apple.commerce",
+        "key": "AutoUpdate",
+        "scope": "system"
+      },
+      "valueType": "bool",
+      "control": {
+        "type": "toggle",
+        "on": true,
+        "off": false,
+        "unset": "on"
+      }
+    },
+    {
+      "id": "system.crash-reporter-mode",
+      "category": "system",
+      "group": "Diagnostics",
+      "title": "Crash report dialog",
+      "tier": "advanced",
+      "store": {
+        "domain": "com.apple.CrashReporter",
+        "key": "DialogType"
+      },
+      "valueType": "string",
+      "control": {
+        "type": "choice",
+        "options": [
+          {
+            "label": "Basic",
+            "value": "basic"
+          },
+          {
+            "label": "Developer",
+            "value": "developer"
+          },
+          {
+            "label": "Server",
+            "value": "server"
+          }
+        ],
+        "unset": "basic"
+      }
+    },
+    {
+      "id": "system.app-nap",
+      "category": "system",
+      "group": "Diagnostics",
+      "title": "App Nap",
+      "tier": "advanced",
+      "store": {
+        "domain": "NSGlobalDomain",
+        "key": "NSAppSleepDisabled"
+      },
+      "valueType": "bool",
+      "control": {
+        "type": "toggle",
+        "on": null,
+        "off": true
+      },
+      "detail": "Lets macOS slow down apps that are hidden and idle."
+    },
+    {
+      "id": "system.verify-disk-images",
+      "category": "system",
+      "group": "Disk Images",
+      "title": "Verify disk images when opening",
+      "tier": "advanced",
+      "store": {
+        "domain": "com.apple.frameworks.diskimages",
+        "key": "skip-verify",
+        "mirrorKeys": [
+          "skip-verify-locked",
+          "skip-verify-remote"
+        ]
+      },
+      "valueType": "bool",
+      "control": {
+        "type": "toggle",
+        "on": null,
+        "off": true
+      }
+    },
+    {
+      "id": "login.message",
+      "category": "login",
+      "group": "Login Window",
+      "title": "Message",
+      "tier": "advanced",
+      "store": {
+        "domain": "com.apple.loginwindow",
+        "key": "LoginwindowText",
+        "scope": "system"
+      },
+      "valueType": "string",
+      "control": {
+        "type": "text",
+        "placeholder": "Shown under the user list"
+      }
+    },
+    {
+      "id": "login.info-menu",
+      "category": "login",
+      "group": "Login Window",
+      "title": "Show host info when clicking the clock",
+      "tier": "advanced",
+      "store": {
+        "domain": "com.apple.loginwindow",
+        "key": "AdminHostInfo",
+        "scope": "system"
+      },
+      "valueType": "string",
+      "control": {
+        "type": "toggle",
+        "on": "HostName",
+        "off": null
+      }
+    },
+    {
+      "id": "login.show-admins",
+      "category": "login",
+      "group": "User List",
+      "title": "Users with administrator accounts",
+      "tier": "advanced",
+      "store": {
+        "domain": "com.apple.loginwindow",
+        "key": "HideAdminUsers",
+        "scope": "system"
+      },
+      "valueType": "string",
+      "control": {
+        "type": "toggle",
+        "on": null,
+        "off": "true"
+      }
+    },
+    {
+      "id": "login.show-standard",
+      "category": "login",
+      "group": "User List",
+      "title": "Standard users",
+      "tier": "advanced",
+      "store": {
+        "domain": "com.apple.loginwindow",
+        "key": "HideLocalUsers",
+        "scope": "system"
+      },
+      "valueType": "string",
+      "control": {
+        "type": "toggle",
+        "on": null,
+        "off": "true"
+      }
+    },
+    {
+      "id": "login.show-network",
+      "category": "login",
+      "group": "User List",
+      "title": "Network users",
+      "tier": "advanced",
+      "store": {
+        "domain": "com.apple.loginwindow",
+        "key": "IncludeNetworkUser",
+        "scope": "system"
+      },
+      "valueType": "string",
+      "control": {
+        "type": "toggle",
+        "on": "true",
+        "off": null
+      }
+    },
+    {
+      "id": "appearance.auto-theme",
+      "category": "appearance",
+      "group": "Appearance",
+      "title": "Switch between light and dark automatically",
+      "tier": "personal",
+      "store": {
+        "domain": "NSGlobalDomain",
+        "key": "AppleInterfaceStyleSwitchesAutomatically"
+      },
+      "valueType": "bool",
+      "control": {
+        "type": "toggle",
+        "on": true,
+        "off": null
+      }
+    },
+    {
+      "id": "appearance.auto-icons",
+      "category": "appearance",
+      "group": "Appearance",
+      "title": "Match icon style to the appearance",
+      "tier": "personal",
+      "store": {
+        "domain": "NSGlobalDomain",
+        "key": "AppleIconAppearanceTheme"
+      },
+      "valueType": "string",
+      "control": {
+        "type": "toggle",
+        "on": "RegularAutomatic",
+        "off": null
+      }
+    },
+    {
+      "id": "keyboard.period-substitution",
+      "category": "keyboard",
+      "group": "Typing",
+      "title": "Add period with double-space",
+      "tier": "recommended",
+      "store": {
+        "domain": "NSGlobalDomain",
+        "key": "NSAutomaticPeriodSubstitutionEnabled"
+      },
+      "valueType": "bool",
+      "control": {
+        "type": "toggle",
+        "on": true,
+        "off": false,
+        "unset": "on"
+      },
+      "profileValue": false
+    },
+    {
+      "id": "keyboard.smart-quotes",
+      "category": "keyboard",
+      "group": "Typing",
+      "title": "Use smart quotes",
+      "tier": "advanced",
+      "store": {
+        "domain": "NSGlobalDomain",
+        "key": "NSAutomaticQuoteSubstitutionEnabled"
+      },
+      "valueType": "bool",
+      "control": {
+        "type": "toggle",
+        "on": true,
+        "off": false,
+        "unset": "on"
+      }
+    },
+    {
+      "id": "keyboard.smart-dashes",
+      "category": "keyboard",
+      "group": "Typing",
+      "title": "Use smart dashes",
+      "tier": "advanced",
+      "store": {
+        "domain": "NSGlobalDomain",
+        "key": "NSAutomaticDashSubstitutionEnabled"
+      },
+      "valueType": "bool",
+      "control": {
+        "type": "toggle",
+        "on": true,
+        "off": false,
+        "unset": "on"
+      }
+    },
+    {
+      "id": "keyboard.accent-menu",
+      "category": "keyboard",
+      "group": "Typing",
+      "title": "Show the accent menu when holding a key",
+      "tier": "advanced",
+      "store": {
+        "domain": "NSGlobalDomain",
+        "key": "ApplePressAndHoldEnabled"
+      },
+      "valueType": "bool",
+      "control": {
+        "type": "toggle",
+        "on": null,
+        "off": false
+      },
+      "detail": "Off makes held keys repeat instead."
+    },
+    {
+      "id": "keyboard.key-repeat",
+      "category": "keyboard",
+      "group": "Key Repeat",
+      "title": "Key repeat interval",
+      "tier": "personal",
+      "store": {
+        "domain": "NSGlobalDomain",
+        "key": "KeyRepeat"
+      },
+      "valueType": "int",
+      "control": {
+        "type": "number",
+        "min": 1,
+        "max": 15,
+        "step": 1
+      },
+      "detail": "Lower is faster. Applies after logging out and back in."
+    },
+    {
+      "id": "keyboard.initial-repeat",
+      "category": "keyboard",
+      "group": "Key Repeat",
+      "title": "Delay until repeat",
+      "tier": "personal",
+      "store": {
+        "domain": "NSGlobalDomain",
+        "key": "InitialKeyRepeat"
+      },
+      "valueType": "int",
+      "control": {
+        "type": "number",
+        "min": 10,
+        "max": 120,
+        "step": 5
+      },
+      "detail": "Lower is shorter. Applies after logging out and back in."
+    },
+    {
+      "id": "screenshots.type",
+      "category": "screenshots",
+      "group": "Capture",
+      "title": "File type",
+      "tier": "advanced",
+      "store": {
+        "domain": "com.apple.screencapture",
+        "key": "type"
+      },
+      "valueType": "string",
+      "control": {
+        "type": "choice",
+        "options": [
+          {
+            "label": "PNG",
+            "value": "png"
+          },
+          {
+            "label": "JPEG",
+            "value": "jpg"
+          },
+          {
+            "label": "HEIC",
+            "value": "heic"
+          },
+          {
+            "label": "TIFF",
+            "value": "tiff"
+          },
+          {
+            "label": "PDF",
+            "value": "pdf"
+          }
+        ],
+        "unset": "png"
+      },
+      "restart": [
+        "SystemUIServer"
+      ]
+    },
+    {
+      "id": "screenshots.window-shadow",
+      "category": "screenshots",
+      "group": "Capture",
+      "title": "Display a shadow in window captures",
+      "tier": "advanced",
+      "store": {
+        "domain": "com.apple.screencapture",
+        "key": "disable-shadow"
+      },
+      "valueType": "bool",
+      "control": {
+        "type": "toggle",
+        "on": null,
+        "off": true
+      },
+      "restart": [
+        "SystemUIServer"
+      ]
+    },
+    {
+      "id": "screenshots.thumbnail",
+      "category": "screenshots",
+      "group": "Capture",
+      "title": "Show the floating thumbnail",
+      "tier": "advanced",
+      "store": {
+        "domain": "com.apple.screencapture",
+        "key": "show-thumbnail"
+      },
+      "valueType": "bool",
+      "control": {
+        "type": "toggle",
+        "on": null,
+        "off": false
+      },
+      "restart": [
+        "SystemUIServer"
+      ]
+    },
+    {
+      "id": "screenshots.pointer",
+      "category": "screenshots",
+      "group": "Capture",
+      "title": "Show the mouse pointer",
+      "tier": "advanced",
+      "store": {
+        "domain": "com.apple.screencapture",
+        "key": "showsCursor"
+      },
+      "valueType": "bool",
+      "control": {
+        "type": "toggle",
+        "on": true,
+        "off": null
+      },
+      "restart": [
+        "SystemUIServer"
+      ]
+    },
+    {
+      "id": "screenshots.name",
+      "category": "screenshots",
+      "group": "Files",
+      "title": "Name",
+      "tier": "advanced",
+      "store": {
+        "domain": "com.apple.screencapture",
+        "key": "name"
+      },
+      "valueType": "string",
+      "control": {
+        "type": "text",
+        "placeholder": "Screenshot"
+      },
+      "restart": [
+        "SystemUIServer"
+      ]
+    },
+    {
+      "id": "screenshots.include-date",
+      "category": "screenshots",
+      "group": "Files",
+      "title": "Include the date and time in names",
+      "tier": "advanced",
+      "store": {
+        "domain": "com.apple.screencapture",
+        "key": "include-date"
+      },
+      "valueType": "bool",
+      "control": {
+        "type": "toggle",
+        "on": null,
+        "off": false
+      },
+      "restart": [
+        "SystemUIServer"
+      ]
+    },
+    {
+      "id": "screenshots.location",
+      "category": "screenshots",
+      "group": "Files",
+      "title": "Save location",
+      "tier": "personal",
+      "store": {
+        "domain": "com.apple.screencapture",
+        "key": "location"
+      },
+      "valueType": "string",
+      "control": {
+        "type": "text",
+        "placeholder": "~/Desktop"
+      },
+      "restart": [
+        "SystemUIServer"
+      ]
+    },
+    {
+      "id": "apps.safari-develop-menu",
+      "category": "apps",
+      "group": "Safari",
+      "title": "Show the Develop menu",
+      "tier": "recommended",
+      "store": {
+        "domain": "com.apple.Safari",
+        "key": "IncludeDevelopMenu"
+      },
+      "valueType": "bool",
+      "control": {
+        "type": "toggle",
+        "on": true,
+        "off": false,
+        "unset": "off"
+      },
+      "restart": [
+        "Safari"
+      ],
+      "needsFullDiskAccess": true,
+      "profileValue": true
+    },
+    {
+      "id": "apps.safari-status-bar",
+      "category": "apps",
+      "group": "Safari",
+      "title": "Show the status bar on link hover",
+      "tier": "personal",
+      "store": {
+        "domain": "com.apple.Safari",
+        "key": "ShowOverlayStatusBar"
+      },
+      "valueType": "bool",
+      "control": {
+        "type": "toggle",
+        "on": true,
+        "off": false,
+        "unset": "off"
+      },
+      "restart": [
+        "Safari"
+      ],
+      "needsFullDiskAccess": true
+    },
+    {
+      "id": "apps.safari-debug-menu",
+      "category": "apps",
+      "group": "Safari",
+      "title": "Display the Debug menu",
+      "tier": "advanced",
+      "store": {
+        "domain": "com.apple.Safari",
+        "key": "IncludeInternalDebugMenu"
+      },
+      "valueType": "bool",
+      "control": {
+        "type": "toggle",
+        "on": true,
+        "off": null
+      },
+      "restart": [
+        "Safari"
+      ],
+      "needsFullDiskAccess": true
+    },
+    {
+      "id": "apps.safari-history-items",
+      "category": "apps",
+      "group": "Safari",
+      "title": "Items in the History menu",
+      "tier": "advanced",
+      "store": {
+        "domain": "com.apple.Safari",
+        "key": "RecentHistoryMenuItemsLimit"
+      },
+      "valueType": "intString",
+      "control": {
+        "type": "number",
+        "min": 1,
+        "max": 50,
+        "step": 1,
+        "unset": 18
+      },
+      "restart": [
+        "Safari"
+      ],
+      "needsFullDiskAccess": true
+    },
+    {
+      "id": "apps.safari-delete-key",
+      "category": "apps",
+      "group": "Safari",
+      "title": "Use the Delete key to go back",
+      "tier": "advanced",
+      "store": {
+        "domain": "com.apple.Safari",
+        "key": "WebKitPreferences.backspaceKeyNavigationEnabled"
+      },
+      "valueType": "bool",
+      "control": {
+        "type": "toggle",
+        "on": true,
+        "off": null
+      },
+      "restart": [
+        "Safari"
+      ],
+      "needsFullDiskAccess": true
+    },
+    {
+      "id": "apps.terminal-secure-keyboard",
+      "category": "apps",
+      "group": "Terminal",
+      "title": "Secure Keyboard Entry",
+      "tier": "recommended",
+      "store": {
+        "domain": "com.apple.Terminal",
+        "key": "SecureKeyboardEntry"
+      },
+      "valueType": "bool",
+      "control": {
+        "type": "toggle",
+        "on": true,
+        "off": false,
+        "unset": "off"
+      },
+      "restart": [
+        "Terminal"
+      ],
+      "profileValue": true
+    },
+    {
+      "id": "apps.terminal-focus-follows-mouse",
+      "category": "apps",
+      "group": "Terminal",
+      "title": "Window focus follows the mouse",
+      "tier": "advanced",
+      "store": {
+        "domain": "com.apple.Terminal",
+        "key": "FocusFollowsMouse"
+      },
+      "valueType": "bool",
+      "control": {
+        "type": "toggle",
+        "on": true,
+        "off": null
+      },
+      "restart": [
+        "Terminal"
+      ]
+    },
+    {
+      "id": "apps.textedit-blank-document",
+      "category": "apps",
+      "group": "TextEdit",
+      "title": "Create a new document when opening TextEdit",
+      "tier": "recommended",
+      "store": {
+        "domain": "com.apple.TextEdit",
+        "key": "NSShowAppCentricOpenPanelInsteadOfUntitledFile"
+      },
+      "valueType": "bool",
+      "control": {
+        "type": "toggle",
+        "on": false,
+        "off": null
+      },
+      "restart": [
+        "TextEdit"
+      ],
+      "needsFullDiskAccess": true,
+      "profileValue": false
+    },
+    {
+      "id": "apps.textedit-plain-text",
+      "category": "apps",
+      "group": "TextEdit",
+      "title": "Use plain text by default",
+      "tier": "recommended",
+      "store": {
+        "domain": "com.apple.TextEdit",
+        "key": "RichText"
+      },
+      "valueType": "int",
+      "control": {
+        "type": "toggle",
+        "on": 0,
+        "off": null
+      },
+      "restart": [
+        "TextEdit"
+      ],
+      "needsFullDiskAccess": true,
+      "profileValue": 0
+    },
+    {
+      "id": "apps.activity-monitor-update",
+      "category": "apps",
+      "group": "Activity Monitor",
+      "title": "Update frequency",
+      "tier": "personal",
+      "store": {
+        "domain": "com.apple.ActivityMonitor",
+        "key": "UpdatePeriod"
+      },
+      "valueType": "int",
+      "control": {
+        "type": "choice",
+        "options": [
+          {
+            "label": "Very often (1 second)",
+            "value": 1
+          },
+          {
+            "label": "Often (2 seconds)",
+            "value": 2
+          },
+          {
+            "label": "Normally (5 seconds)",
+            "value": 5
+          }
+        ],
+        "unset": 5
+      },
+      "restart": [
+        "Activity Monitor"
+      ]
+    },
+    {
+      "id": "developer.homebrew",
+      "category": "developer",
+      "group": "Tools",
+      "title": "Homebrew",
+      "tier": "recommended",
+      "system": "homebrew",
+      "valueType": "bool",
+      "control": {
+        "type": "status",
+        "onLabel": "Installed",
+        "offLabel": "Not installed",
+        "actions": [
+          {
+            "title": "Install…",
+            "value": true,
+            "when": "off"
+          }
+        ]
+      },
+      "detail": "Install opens Terminal and runs Homebrew's official installer, which asks for your password.",
+      "profileValue": true
+    },
+    {
+      "id": "developer.xcode-tools",
+      "category": "developer",
+      "group": "Tools",
+      "title": "Xcode Command Line Tools",
+      "tier": "recommended",
+      "system": "xcodeCommandLineTools",
+      "valueType": "bool",
+      "control": {
+        "type": "status",
+        "onLabel": "Installed",
+        "offLabel": "Not installed",
+        "actions": [
+          {
+            "title": "Install…",
+            "value": true,
+            "when": "off"
+          }
+        ]
+      },
+      "detail": "Install opens Apple's installer. Having Xcode itself also counts as installed.",
+      "profileValue": true
+    }
+  ]
+}

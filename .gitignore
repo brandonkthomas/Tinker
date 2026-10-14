@@ -1,0 +1,11 @@
+.DS_Store
+xcuserdata/
+*.xcuserstate
+build/
+DerivedData/
+
+# Signing material (sanity check)
+*.p12
+*.p8
+*.cer
+*.mobileprovision
