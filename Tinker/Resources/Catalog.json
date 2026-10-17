@@ -367,26 +367,6 @@
       ]
     },
     {
-      "id": "dock.only-open-apps",
-      "category": "dock",
-      "group": "Contents",
-      "title": "Only show open applications",
-      "tier": "advanced",
-      "store": {
-        "domain": "com.apple.dock",
-        "key": "static-only"
-      },
-      "valueType": "bool",
-      "control": {
-        "type": "toggle",
-        "on": true,
-        "off": null
-      },
-      "restart": [
-        "Dock"
-      ]
-    },
-    {
       "id": "dock.show-recents",
       "category": "dock",
       "group": "Contents",
@@ -720,7 +700,7 @@
       "category": "finder",
       "group": "Windows",
       "title": "Show window title icons without delay",
-      "tier": "advanced",
+      "tier": "recommended",
       "store": {
         "domain": "NSGlobalDomain",
         "key": "NSToolbarTitleViewRolloverDelay"
@@ -733,7 +713,9 @@
       },
       "restart": [
         "Finder"
-      ]
+      ],
+      "profileValue": 0,
+      "detail": "Shows the folder or document icon beside a window's title as soon as the pointer is over the title, instead of after a short wait. The icon can be dragged, or Command-clicked to see the full path. Applies to all apps."
     },
     {
       "id": "finder.autosize-columns",
